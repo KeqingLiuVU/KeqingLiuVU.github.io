@@ -3,53 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Personal Website</title>
+  <title>Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
-    <div class="nav-name">YourName</div>
+    <div class="nav-logo">YN</div>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero -->
   <section id="hero">
-    <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Your Name</h1>
-      <p class="hero-title"><span id="typed"></span></p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-secondary">Get In Touch</a>
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Software Engineer</p>
+      <h1>Your Name</h1>
+      <p class="hero-sub">Building precise, scalable systems.<br>Based in Your City.</p>
+      <div class="hero-cta">
+        <a href="#work" class="cta-primary">View Work</a>
+        <a href="#contact" class="cta-link">Get in touch →</a>
       </div>
     </div>
-    <div class="hero-blob"></div>
+    <div class="hero-line"></div>
   </section>
 
   <!-- About -->
   <section id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div class="about-avatar">
-          <div class="avatar-placeholder">YN</div>
+      <div class="about-layout">
+        <div class="about-left">
+          <span class="label">About</span>
         </div>
-        <div class="about-text">
-          <p>I'm a <strong>Computer Science student</strong> at XYZ University, passionate about building things that live on the internet. I enjoy solving complex problems and turning ideas into reality through clean, efficient code.</p>
-          <p>When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee.</p>
-          <div class="about-tags">
-            <span>📍 Your City</span>
-            <span>🎓 XYZ University</span>
-            <span>💼 Open to opportunities</span>
+        <div class="about-right">
+          <p class="about-lead">I'm a software engineer with a focus on backend systems and data infrastructure. I care deeply about code quality, performance, and the details that separate good software from great software.</p>
+          <p class="about-body">Currently studying Computer Science at XYZ University. Previously interned at Company A and Company B, where I worked on distributed systems and developer tooling.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Years coding</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Internships</span>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Selected Work</span>
+      </div>
+
+      <div class="work-list">
+
+        <a href="#" class="work-item">
+          <div class="work-meta">
+            <span class="work-year">2024</span>
+            <span class="work-tag">Systems</span>
+          </div>
+          <div class="work-content">
+            <h3>Project Alpha</h3>
+            <p>A high-performance data pipeline processing 10M+ events per day. Reduced latency by 60% through custom indexing and query optimization.</p>
+          </div>
+          <div class="work-stack">
+            <span>Python</span><span>Kafka</span><span>PostgreSQL</span>
+          </div>
+          <span class="work-arrow">↗</span>
+        </a>
+
+        <a href="#" class="work-item">
+          <div class="work-meta">
+            <span class="work-year">2024</span>
+            <span class="work-tag">Web</span>
+          </div>
+          <div class="work-content">
+            <h3>Project Beta</h3>
+            <p>Full-stack application serving 5,000+ active users. Built a real-time collaboration feature that increased user engagement by 40%.</p>
+          </div>
+          <div class="work-stack">
+            <span>React</span><span>Node.js</span><span>Redis</span>
+          </div>
+          <span class="work-arrow">↗</span>
+        </a>
+
+        <a href="#" class="work-item">
+          <div class="work-meta">
+            <span class="work-year">2023</span>
+            <span class="work-tag">ML</span>
+          </div>
+          <div class="work-content">
+            <h3>Project Gamma</h3>
+            <p>Machine learning model for predictive analytics with 94% accuracy. Deployed as a REST API serving production traffic.</p>
+          </div>
+          <div class="work-stack">
+            <span>Python</span><span>PyTorch</span><span>AWS</span>
+          </div>
+          <span class="work-arrow">↗</span>
+        </a>
+
       </div>
     </div>
   </section>
@@ -57,81 +123,28 @@
   <!-- Skills -->
   <section id="skills">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Languages</h3>
-          <div class="skill-tags">
-            <span>Python</span><span>JavaScript</span><span>Java</span><span>SQL</span>
+      <div class="skills-layout">
+        <div class="skills-left">
+          <span class="label">Expertise</span>
+        </div>
+        <div class="skills-right">
+          <div class="skill-row">
+            <span class="skill-area">Languages</span>
+            <span class="skill-items">Python · JavaScript · Java · C++ · SQL</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-area">Frameworks</span>
+            <span class="skill-items">React · Node.js · Flask · Spring · PyTorch</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-area">Infrastructure</span>
+            <span class="skill-items">AWS · Docker · Kubernetes · PostgreSQL · Redis</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-area">Focus Areas</span>
+            <span class="skill-items">Distributed Systems · Data Engineering · API Design</span>
           </div>
         </div>
-        <div class="skill-category">
-          <h3>Frameworks</h3>
-          <div class="skill-tags">
-            <span>React</span><span>Node.js</span><span>Flask</span><span>TensorFlow</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Tools</h3>
-          <div class="skill-tags">
-            <span>Git</span><span>Docker</span><span>AWS</span><span>Figma</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🤖</span>
-            <div class="project-links">
-              <a href="#" title="GitHub">&#60;/&#62;</a>
-              <a href="#" title="Live Demo">↗</a>
-            </div>
-          </div>
-          <h3>Project One</h3>
-          <p>A brief description of what this project does and the problem it solves. Built with modern technologies.</p>
-          <div class="project-tags">
-            <span>Python</span><span>React</span><span>AWS</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-icon">📊</span>
-            <div class="project-links">
-              <a href="#" title="GitHub">&#60;/&#62;</a>
-              <a href="#" title="Live Demo">↗</a>
-            </div>
-          </div>
-          <h3>Project Two</h3>
-          <p>Another cool project description here. Explain what makes it interesting and what you learned.</p>
-          <div class="project-tags">
-            <span>JavaScript</span><span>Node.js</span><span>MongoDB</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-icon">🌐</span>
-            <div class="project-links">
-              <a href="#" title="GitHub">&#60;/&#62;</a>
-              <a href="#" title="Live Demo">↗</a>
-            </div>
-          </div>
-          <h3>Project Three</h3>
-          <p>Third project description. Highlight the impact or scale — users, data processed, performance gains.</p>
-          <div class="project-tags">
-            <span>Java</span><span>Spring</span><span>SQL</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -139,36 +152,23 @@
   <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-subtitle">I'm currently open to new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
-      <div class="contact-links">
-        <a href="mailto:your@email.com" class="contact-card">
-          <span>✉️</span>
-          <div>
-            <strong>Email</strong>
-            <p>your@email.com</p>
-          </div>
-        </a>
-        <a href="https://linkedin.com/in/yourprofile" class="contact-card" target="_blank">
-          <span>💼</span>
-          <div>
-            <strong>LinkedIn</strong>
-            <p>linkedin.com/in/yourprofile</p>
-          </div>
-        </a>
-        <a href="https://github.com/yourusername" class="contact-card" target="_blank">
-          <span>🐙</span>
-          <div>
-            <strong>GitHub</strong>
-            <p>github.com/yourusername</p>
-          </div>
-        </a>
+      <div class="contact-inner">
+        <p class="contact-eyebrow">Currently open to opportunities</p>
+        <h2>Let's work<br>together.</h2>
+        <a href="mailto:your@email.com" class="contact-email">your@email.com</a>
+        <div class="contact-links">
+          <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn ↗</a>
+          <a href="https://github.com/KeqingLiuVU" target="_blank">GitHub ↗</a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Designed & Built by Your Name · 2025</p>
+    <div class="container">
+      <span>© 2025 Your Name</span>
+      <span>Built with care.</span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
